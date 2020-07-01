@@ -1,3 +1,5 @@
+#matrix contains rows and columns and below is a code for 2*2 matrix
+
 makechacematrix<-function(x=matrix()){
   man<-NULL
   set<-function(y){
@@ -10,6 +12,7 @@ makechacematrix<-function(x=matrix()){
   list(set=set,get=get,setinv=setinv,getinv=getinv)
   
 }
+#the below is the program for inverse matrix
 chacesolve<-function(x,...){
   man<-x$getinv()
   if(!is.null(man)){
